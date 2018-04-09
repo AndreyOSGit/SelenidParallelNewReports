@@ -1,0 +1,25 @@
+
+    <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="Suite"  >
+    <test name="test" group-by-instances="true" parallel="methods" thread-count="3">
+        <classes>
+            <class name="testParallel" />
+        </classes>
+    </test>
+
+    <listeners>
+
+        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+
+    </listeners>
+</suite>
+<!--parallel https://learn.techbeacon.com/units/how-use-testng-parallel-test-execution-->
+        <!--https://webkul.com/blog/generate-reportng-reports-testsuite-selenium-webdriver/-->
+<!--Custom http://www.seleniumeasy.com/testng-tutorials/testng-customize-emailable-html-report-example-->
+<!--Run tests ufter retry
+https://www.youtube.com/watch?v=DDK-dTyfGTg
+http://www.seleniumeasy.com/testng-tutorials/retry-listener-failed-tests-count-update-->
+
+<!--allure staff http://automated-testing.info/t/pomogite-podklyuchit-allure-k-proektu-java-testng-maven/7122-->
